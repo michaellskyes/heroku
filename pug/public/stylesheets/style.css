@@ -1,0 +1,200 @@
+
+.bkimage {
+    background-image: url("/images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.navbar {
+    
+}
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navhome{
+    float:left; 
+}
+
+.navhome a{
+    display: block;
+    padding: 32px;
+    font: 26px "proxima nova";
+    font-weight: 900;
+    color: white;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+
+.navlogin{
+    float:right; 
+}
+
+.navlogin a{
+    display: block;
+    padding-top: 20px;
+    padding-left: 75px;
+    padding-right: 93px;
+    font: 14px "proxima nova";
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navitem {
+    float:right; 
+    padding-top: 15px;
+}
+
+
+.navitem a{
+    display: block;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font: 14px "proxima nova";
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+.error {
+    background-color: #EF5E79;
+    background-size: cover;
+    color: #50E3C2;
+    font-family:"proxima Nova";
+}
+
+title {
+    text-align: left;
+}
+
+.heroline {
+    padding-top: 100px;
+    padding-bottom: 5px;
+    font: 38px "Proxima Nova";
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+/*BUTTONS*/
+
+#logincta{
+    border: 2.5px solid #C5A482;
+    background-color: transparent;
+	border-radius:2px;
+	color:#ffffff;
+	font: 14px "proxima Nova";
+    font-weight: 200;
+	padding:10px 30px;
+	text-decoration:none;
+    transition: all 0.5s ease 0s;
+    letter-spacing: 1px;
+    float: right;
+    margin-top: 22px;
+    margin-right: 30px;
+    margin-left: 25px;
+    
+}
+
+#logincta:hover {
+	background-color: #C5A482;
+}
+#logincta:active {
+	position:relative;
+}
+
+#logincta:focus {outline:0;}
+
+.btndiv{
+    padding-top: 50px; 
+    text-align: center;
+}
+
+#herocta {
+	background-color: #C5A482;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:2px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"proxima Nova";
+    font-weight: bold;
+	font-size:14px;
+	padding:14px 85px;
+	text-decoration:none;
+    border: none;
+    transition: all 0.5s ease 0s;
+    letter-spacing: 1px;
+}
+#herocta:hover {
+	background-color: #EF5E79;
+}
+#herocta:active {
+	position:relative;
+}
+
+#herocta:focus {outline:0;}
+
+
+
+/*explore button*/
+
+.expbtndiv{
+    padding-top: 50px; 
+    text-align: center;
+}
+
+#expcta {
+	background-color: #C5A482;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:2px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"proxima Nova";
+    font-weight: bold;
+	font-size:14px;
+	padding:14px 85px;
+	text-decoration:none;
+    border: none;
+    transition: all 0.5s ease 0s;
+    letter-spacing: 1px;
+}
+#expcta:hover {
+	background-color: #EF5E79;
+}
+#expcta:active {
+	position:relative;
+}
+
+#herocta:focus {outline:0;}
+
+
+.heromsg {
+    padding-left: 25%;
+    font: 20px "Proxima Nova";
+    font-weight: 675;
+    color: white;
+    text-align: center;
+    max-width: 50%;
+    line-height: 175%;
+
+
+}

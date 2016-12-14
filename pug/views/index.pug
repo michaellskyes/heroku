@@ -1,0 +1,49 @@
+extends layout
+
+
+
+block content
+
+  body.bkimage
+  
+  div.navbar
+  
+      button#logincta.float-right.submit-button LOG IN
+          script(type='text/javascript').
+            document.getElementById("logincta").onclick = function () {
+            location.href = "/auth/instagram";
+            };
+      ul.topnav
+          li.navhome
+            a(href='/') PHOTODUMP
+          li.navitem
+            a(href='about.asp') ABOUT
+          li.navitem
+            a(href='contact.asp') WHY JOIN?
+          li.navitem
+            a(href='news.asp') EXPLORE 
+          li.navitem
+            a(href='/') HOME          
+
+
+
+  div.heroline
+    p SHOW AND TELL FOR PHOTOGRAPHERS
+      
+  p.heromsg Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum urna felis, dictum dictum erat condimentum sit amet. Cras vel est bibendum, Cras vel est bibendum, posuere orci quis, consequat nisl.
+  
+  div.btndiv
+      button#herocta.float-left.submit-button SIGN UP
+
+        script(type='text/javascript').
+          document.getElementById("herocta").onclick = function () {
+          location.href = "/auth/instagram";
+          };
+          
+  div.expbtndiv
+        button#exptri.float-right.submit-button EXPLORE THE FEED
+          script(type='text/javascript').
+            document.getElementById("expctatri").onclick = function () {
+            location.href = "explore";
+            };
+        
