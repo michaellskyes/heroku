@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'bugs',
+1 verbose cli   'test1proc' ]
+2 info using npm@4.0.3
+3 info using node@v6.5.0
+4 silly fetchPackageMetaData test1proc
+5 silly fetchNamedPackageData test1proc
+6 silly mapToRegistry name test1proc
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npmjs.org/
+9 silly mapToRegistry data Result {
+9 silly mapToRegistry   raw: 'test1proc',
+9 silly mapToRegistry   scope: null,
+9 silly mapToRegistry   escapedName: 'test1proc',
+9 silly mapToRegistry   name: 'test1proc',
+9 silly mapToRegistry   rawSpec: '',
+9 silly mapToRegistry   spec: 'latest',
+9 silly mapToRegistry   type: 'tag' }
+10 silly mapToRegistry uri https://registry.npmjs.org/test1proc
+11 verbose request uri https://registry.npmjs.org/test1proc
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 2:23:39 AM
+14 verbose request id eff131f774d4a7be
+15 http request GET https://registry.npmjs.org/test1proc
+16 http 404 https://registry.npmjs.org/test1proc
+17 verbose headers { 'content-type': 'application/json',
+17 verbose headers   'cache-control': 'max-age=0',
+17 verbose headers   'content-length': '2',
+17 verbose headers   'accept-ranges': 'bytes',
+17 verbose headers   date: 'Mon, 19 Dec 2016 07:23:39 GMT',
+17 verbose headers   via: '1.1 varnish',
+17 verbose headers   age: '0',
+17 verbose headers   connection: 'keep-alive',
+17 verbose headers   'x-served-by': 'cache-jfk8120-JFK',
+17 verbose headers   'x-cache': 'MISS',
+17 verbose headers   'x-cache-hits': '0',
+17 verbose headers   'x-timer': 'S1482132219.445364,VS0,VE145',
+17 verbose headers   vary: 'Accept-Encoding' }
+18 silly get cb [ 404,
+18 silly get   { 'content-type': 'application/json',
+18 silly get     'cache-control': 'max-age=0',
+18 silly get     'content-length': '2',
+18 silly get     'accept-ranges': 'bytes',
+18 silly get     date: 'Mon, 19 Dec 2016 07:23:39 GMT',
+18 silly get     via: '1.1 varnish',
+18 silly get     age: '0',
+18 silly get     connection: 'keep-alive',
+18 silly get     'x-served-by': 'cache-jfk8120-JFK',
+18 silly get     'x-cache': 'MISS',
+18 silly get     'x-cache-hits': '0',
+18 silly get     'x-timer': 'S1482132219.445364,VS0,VE145',
+18 silly get     vary: 'Accept-Encoding' } ]
+19 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/test1proc
+19 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+19 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+19 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+19 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+19 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+19 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+19 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+19 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+19 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+19 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+19 silly fetchPackageMetaData  error for test1proc { Error: Registry returned 404 for GET on https://registry.npmjs.org/test1proc
+19 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+19 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+19 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+19 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+19 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+19 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+19 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+19 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+19 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+19 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12) pkgid: 'test1proc', statusCode: 404, code: 'E404' }
+20 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/test1proc
+20 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+20 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+20 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+20 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+20 verbose stack     at emitTwo (events.js:106:13)
+20 verbose stack     at Request.emit (events.js:191:7)
+20 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+20 verbose stack     at emitOne (events.js:96:13)
+20 verbose stack     at Request.emit (events.js:188:7)
+20 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+21 verbose statusCode 404
+22 verbose pkgid test1proc
+23 verbose cwd /Users/MichaellSkyes/Desktop/heroku
+24 error Darwin 16.1.0
+25 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "bugs" "test1proc"
+26 error node v6.5.0
+27 error npm  v4.0.3
+28 error code E404
+29 error 404 Registry returned 404 for GET on https://registry.npmjs.org/test1proc
+30 error 404
+31 error 404 'test1proc' is not in the npm registry.
+32 error 404 You should bug the author to publish it (or use the name yourself!)
+33 error 404 Note that you can also install from a
+34 error 404 tarball, folder, http url, or git url.
+35 verbose exit [ 1, true ]

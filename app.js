@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var passport = require('passport');
 var config = require('./oauth.js');
 var InstagramStrategy = require('passport-instagram').Strategy;
-var port = process.env.PORT || 8000
+var port = process.env.PORT || 3000
 
 
 var INSTAGRAM_CLIENT_ID = "f1137177dcc746e6859eae329e233ed5";
