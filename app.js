@@ -2,14 +2,15 @@
 
 var express = require('express');
 var path = require('path');
-//var favicon = require('serve-favicon');
+var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
- 
 var passport = require('passport');
 var config = require('./oauth.js');
 var InstagramStrategy = require('passport-instagram').Strategy;
+var port = process.env.PORT || 8000
+
 
 var INSTAGRAM_CLIENT_ID = "f1137177dcc746e6859eae329e233ed5";
 var INSTAGRAM_CLIENT_SECRET = "5f38d5792ae1485abc803b3a6484264a";
@@ -20,6 +21,10 @@ var db = require('./model/db'),
 var routes = require('./routes/index'),
     blobs = require('./routes/blobs');
 var app = express();
+
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
