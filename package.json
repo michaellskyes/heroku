@@ -2,8 +2,8 @@
   "name": "final",
   "version": "0.0.0",
   "private": true,
-  "scripts": { "node app.js"
-  },
+  "scripts": {
+    "start": "node app.js" },
   "dependencies": {
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
